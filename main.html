@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Webpage Design</title>
+    <title>BVX</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,53 +15,70 @@
 
             <div class="menu">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">RENT</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li class="active"><a href="main.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="buy.html">BUY</a></li>
+                                <li><a href="#">SELL</a></li>
+                                <li><a href="#">RENT</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
-
-          <!--  <div class="search">
-                <input class="srch" type="search" name="" placeholder="Type To text">
-                <a href="#"> <button class="btn">Search</button></a>
-            </div>-->
-
-        </div> 
+         </div> 
         <div class="content">
-            <h1>Web Design & <br><span>Development</span> <br>Course</h1>
-            <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque 
-                 expedita atque eveniet <br> quis nesciunt. Quos nulla vero consequuntur, fugit nemo ad delectus 
-                <br> a quae totam ipsa illum minus laudantium?</p>
-
-                <button class="cn"><a href="#">JOIN US</a></button>
-
+            <h1>BUY / SELL <br><span>OR RENT</span> <br>STUFF</h1>
+            <p class="par">Immerse yourself into ease of exchanging</p>
                 <div class="form">
-                    <h2>Login Here</h2>
-                    <input type="email" name="email" placeholder="Enter Email ">
-                    <input type="password" name="" placeholder="Enter Password ">
-                    <button class="btnn"><a href="#">Login</a></button>
-
-                    <p class="link">Don't have an account<br>
-                    <a href="#">Sign up </a> here</a></p>
-                   <!-- <p class="liw">Log in with</p>
-
-
-                    <div class="icons">
-                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-                    </div>
-                -->
-
+                <form class="registration-form">
+                    <input type="text" placeholder="Name"/>
+                    <input type="text" placeholder="Username"/>
+                    <input type="text" placeholder="Email id"/>
+                    <input type="text" placeholder="Contact Number"/>
+                    <input type="text" placeholder="Address"/>
+                    <input type="text" placeholder="Password"/>
+                    <button>Register</button>
+                    <p class="message">Already Registered? <a href ="#">Log in </a></p>
+                </form>
+                <form class="login-form">
+                    <input type="text" placeholder="Email id"/>
+                    <input type="text" placeholder="Password"/>
+                    <button>Log in</button>
+                    <p class="message">Not Registered? <a href="#">Register</a></p>
+                </form>
                 </div>
-                    </div>
-                </div>
+                
         </div>
+
+        <div class="bg-modal">
+            <div class="modal-content">
+                <div class="close">+</div>
+                <img src="download.png" alt="">
+                <form action="">
+                    <input type="text" placeholder="name">
+                    <input type="text" placeholder="description">
+                    <input type="text" placeholder="condition">
+                    <input type="text" placeholder="price">
+                    <a href="" class="button">Submit</a>
+                </form>
+            </div>
+        </div>
+        </div>
+            
+        
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'>
+
+    </script>
+    <script>
+        $('.message a').click(function(){
+            $('form').animate({height: "toggle",opacity: "toggle"}, "slow");
+        });
+    </script>
 </body>
 </html>
