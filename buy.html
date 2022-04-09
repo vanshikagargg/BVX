@@ -5,7 +5,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <style>
+    body {
+      background-image: url('23.jpeg');
+    }
+    </style>
     <div class="main">
         <div class="navbar">
             <div class="icon">
@@ -14,19 +18,20 @@
 
             <div class="menu">
                 <ul>
-                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="main.php">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="#">SERVICES</a>
                         <div class="sub-menu-1">
                             <ul>
-                                <li><a href="#">BUY</a></li>
-                                <li><a href="#">SELL</a></li>
+                                <li><a href="buy.html">BUY</a></li>
+                                <li><a href="sell.html">SELL</a></li>
                                 <li><a href="#">RENT</a></li>
                             </ul>
                         </div>
                     </li>
                    
                     <li><a href="contact.html">CONTACT</a></li>
+                       <li><a href="profile.html">PROFILE</a></li>
                 </ul>
             </div>
 
@@ -35,7 +40,7 @@
                 <a href="#"> <button class="btn">Search</button></a>
             </div>
 
-<div class="menu">
+            <div class="menu">
                 <ul>
                     <li><a href="#">    TRUNKS</a></li>
                     <li><a href="#">BOOKS</a></li>
@@ -45,7 +50,86 @@
                 </ul>
             </div>
         </div> 
-        </div>
+        <h1>Product List</h1>
+        <div id="div1">
+            <section class="section-grid">
+            <div class="grid-prod">
+             <div class="prod-grid"><img src="product1.jpg" alt="kalita">
+               <h3>Rs. 500</h3>    
+                    <p>Trunk in good condition </p>
+         <button class="btn"> Buy <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+             </div>
+             <div class="prod-grid"><img src="trunk.jpg" alt="kalita">
+               <h3>Rs. 700</h3>    
+                    <p>Big trunk<p>
+         <button class="btn"> Buy <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+             </div>
+              <div class="prod-grid"><img src="old cycle.jpg" alt="kalita">
+               <h3>Rs. 1500</h3>    
+                    <p>Old cycle</p>
+         <button class="btn"> Buy <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+             </div>
+              <div class="prod-grid"><img src="engineering maths.jpg" alt="kalita">
+               <h3>Rs. 400 </h3>    
+                    <p>Engineering mathematics book</p>
+         <button class="btn"> Buy <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+             </div>
+              <div class="prod-grid"><img src="ed.jpg" alt="kalita">
+               <h3>Rs. 200</h3>    
+                    <p>Engineering Drawing</p>
+         <button class="btn"> Buy <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+             </div>
+              <div class="prod-grid"><img src="green cycle.jpg" alt="kalita">
+               <h3>Rs. 2500 </h3>    
+                    <p> New cycle </p>
+         <button class="btn"> Buy <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+             </div>
+            </div>
+             </section> 
+          </div>
+         <!--Product List-->         
+         <!-- <div id="div2" style="display:none;">
+            <section class="section-list">
+              <table>
+                <tr>
+                  <td><img src="https://images.contentful.com/3h0qt25be5vd/1ojeAoISmMSKysKIOKEWGi/22b6344383ffabc7e250f1eed88287ae/Brew_Guide-KalitaWave-Step03.jpg?w=960&h=640&fm=jpg&q=70" alt="kalita"><td>
+                  <td>  <h3>Ph'nglui mglw'nafh. </h3>    
+                    <p>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.</p>
+                   <button class="btn-list"> Buy <i class="fa fa-shopping-cart" aria-hidden="true"></i></button></td>
+                </tr>
+                <tr>
+                  <td width="30%"><img src="https://images.contentful.com/3h0qt25be5vd/1ojeAoISmMSKysKIOKEWGi/22b6344383ffabc7e250f1eed88287ae/Brew_Guide-KalitaWave-Step03.jpg?w=960&h=640&fm=jpg&q=70" alt="kalita"><td>
+                  <td>  <h3>Ph'nglui mglw'nafh. </h3>    
+                    <p>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.</p>
+                   <button class="btn-list"> Buy <i class="fa fa-shopping-cart" aria-hidden="true"></i></button></td>
+                </tr>
+                <tr>
+                  <td width="30%"><img src="https://images.contentful.com/3h0qt25be5vd/1ojeAoISmMSKysKIOKEWGi/22b6344383ffabc7e250f1eed88287ae/Brew_Guide-KalitaWave-Step03.jpg?w=960&h=640&fm=jpg&q=70" alt="kalita"><td>
+                  <td>  <h3>Ph'nglui mglw'nafh. </h3>    
+                    <p>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.</p>
+                   <button class="btn-list"> Buy <i class="fa fa-shopping-cart" aria-hidden="true"></i></button></td>
+                </tr>
+                <tr>
+                  <td width="30%"><img src="https://images.contentful.com/3h0qt25be5vd/1ojeAoISmMSKysKIOKEWGi/22b6344383ffabc7e250f1eed88287ae/Brew_Guide-KalitaWave-Step03.jpg?w=960&h=640&fm=jpg&q=70" alt="kalita"><td>
+                  <td>  <h3>Ph'nglui mglw'nafh. </h3>    
+                    <p>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.</p>
+                   <button class="btn-list"> Buy <i class="fa fa-shopping-cart" aria-hidden="true"></i></button></td>
+                </tr>
+                <tr>
+                  <td width="30%"><img src="https://images.contentful.com/3h0qt25be5vd/1ojeAoISmMSKysKIOKEWGi/22b6344383ffabc7e250f1eed88287ae/Brew_Guide-KalitaWave-Step03.jpg?w=960&h=640&fm=jpg&q=70" alt="kalita"><td>
+                  <td>  <h3>Ph'nglui mglw'nafh. </h3>    
+                    <p>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.</p>
+                   <button class="btn-list"> Buy <i class="fa fa-shopping-cart" aria-hidden="true"></i></button></td>
+                </tr>
+                <tr>
+                  <td width="30%"><img src="https://images.contentful.com/3h0qt25be5vd/1ojeAoISmMSKysKIOKEWGi/22b6344383ffabc7e250f1eed88287ae/Brew_Guide-KalitaWave-Step03.jpg?w=960&h=640&fm=jpg&q=70" alt="kalita"><td>
+                  <td>  <h3>Ph'nglui mglw'nafh. </h3>    
+                    <p>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.</p>
+                   <button class="btn-list"> Buy <i class="fa fa-shopping-cart" aria-hidden="true"></i></button></td>
+                </tr>
+              </table>
+             </section> 
+          </div>-->
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
